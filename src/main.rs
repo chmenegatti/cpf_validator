@@ -15,7 +15,7 @@ fn main() {
 }
 
 fn validar_cpf(cpf: &str) -> bool {
-  // Remover caracteres não numéricos
+  // Remover caracteres não numéricos do CPF
   let cpf_clean: String = cpf.chars().filter(|c| c.is_numeric()).collect();
   
   if cpf_clean.len() != 11 {
